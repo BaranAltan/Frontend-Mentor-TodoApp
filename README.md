@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: []()
+- Live Site URL: [Todo App](https://baran-todoapp.netlify.app/)
 
 ## My process
 
