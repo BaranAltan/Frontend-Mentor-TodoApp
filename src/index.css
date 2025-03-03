@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+.darkBackground {
+    background: url("images/bg-desktop-dark.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 300px;
+    transition: all 0.3s;
+}
+.lightBackground {
+    background: url("images/bg-desktop-light.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 300px;
+    transition: all 0.3s;
+}
+body{
+    background-color: #161722;
+
+}
+.transtition
+{
+    transition: all 0.3s;
+
+}
+.inputType
+{
+    width: 550px;
+    height: 60px;
+    background-color: #25273C;
+    outline: none;
+    border: none;
+    padding: 20px 50px;
+    color: #fff;
+    font-size: 17px;
+    border-bottom: 1px solid #393A4C;
+
+}
+.firstInput{
+    border-radius: 5px;
+    border: none;
+}
+.task-item:first-of-type .inputType {
+    border-radius: 5px 5px 0 0px;
+}
+.checkNull{
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid hsl(234, 11%, 52%);
+    outline: none;
+    background:none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    align-self: center;
+    margin-left: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.checkNull:checked
+{
+    background: url('images/icon-check.svg'), linear-gradient(to right,hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+    background-repeat: no-repeat;
+    background-position: center;
+    border:none;
+}
+.cross{
+    position: absolute;
+    align-self: center;
+    margin-left: -35px;
+    margin-top: 22.5px;
+    cursor: pointer;
+
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  .theme
+  {
+    transition: transform 0.5s ease-in-out;
+  }
+  .theme:hover {
+    transform: rotate(360deg);
+  }
+  
+  /* ? FOOTER */
+
+.footerInput
+{
+    width: 550px;
+    height: 50px;
+    border-radius: 0 0 5px 5px;
+    background-color: #25273C;
+    font-size: 14px;
+    color: #777A92;
+}
+.filter
+{
+    width: 160px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.filter span:hover
+{
+    transition: all 0.3s;
+    color: #fff;
+}
+.clear
+{
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.clear:hover{
+    color: #fff;
+}
+.inputLightBackground
+{
+    background-color: #FFFFFF;
+    color: #484B6A;
+}
+.inputDarkBackground
+{
+    background-color: #25273C;
+    color: #fff;
+}
+.activeFilter {
+    color: hsl(220, 98%, 61%);
+}
+.color
+{
+    color: #777A92;
+    font-size: 12px;
+}
+
+
+@media (max-width: 450px) {
+
+    .inputType{
+        width: 340px;
+        height: 60px;
+    }
+    .footerInput
+    {
+        width: 340px;
+        height: 80px;
+        padding-top: 5px;
+    }
+    
+    .filter
+    {
+        width: 60px;
+        height: 70px;
+        cursor: pointer;
+        font-weight: bold;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .todo
+    {
+        display: flex;
+        width: 300px;
+        justify-content: flex-start;
+        margin-right: 200px;
+    }
+
+    .todo img
+    {
+        margin-left: 140px;
+    }
+    }
