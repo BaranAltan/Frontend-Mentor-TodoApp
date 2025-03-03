@@ -63,7 +63,7 @@ function Header() {
 
     <div  className="mt-4 transtition">
       <input  type='checkbox' className='checkNull' checked={checkState} onChange={() => setCheckState(!checkState)}></input>
-      <input className={`${inputBackground} inputType firstInput`} value={inputValue} onChange={(e) => setInputValue(e.target.value)} onKeyDown={handleKeyDown} placeholder='Yeni Görev Oluşturunuz' type="text" /> 
+      <input className={`${inputBackground} inputType firstInput`} value={inputValue} onChange={(e) => setInputValue(e.target.value)} onKeyDown={handleKeyDown} placeholder='Create New Task' type="text" /> 
     </div>
     
     </div>
